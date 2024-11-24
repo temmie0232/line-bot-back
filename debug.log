@@ -1,0 +1,441 @@
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Request received
+Files: <MultiValueDict: {'file': [<TemporaryUploadedFile: 環境と情報_第3回.pdf (application/pdf)>]}>
+POST data: <QueryDict: {'message': ['awd']}>
+PDF images directory: /home/temmie0232/Project/line-bot/backend/media/pdf_images
+Sending message: awd
+Error sending message: LineBotApiError: status_code=400, request_id=2ae11f36-f648-4631-ab34-eb9e8389ed68, error_response={"details": [], "message": "Failed to send messages"}, headers={'server': 'legy', 'cache-control': 'no-cache, no-store, max-age=0, must-revalidate', 'content-type': 'application/json', 'date': 'Tue, 19 Nov 2024 00:56:52 GMT', 'expires': '0', 'pragma': 'no-cache', 'x-content-type-options': 'nosniff', 'x-frame-options': 'DENY', 'x-line-request-id': '2ae11f36-f648-4631-ab34-eb9e8389ed68', 'x-xss-protection': '1; mode=block', 'content-length': '37'}
+Traceback (most recent call last):
+  File "/home/temmie0232/Project/line-bot/backend/api/views.py", line 49, in send_line_message
+    line_bot_api.push_message(
+  File "/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/deprecated/classic.py", line 199, in wrapper_function
+    return wrapped_(*args_, **kwargs_)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/linebot/api.py", line 174, in push_message
+    self._post(
+  File "/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/linebot/api.py", line 2116, in _post
+    self.__check_error(response)
+  File "/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/linebot/api.py", line 2152, in __check_error
+    raise LineBotApiError(
+linebot.exceptions.LineBotApiError: LineBotApiError: status_code=400, request_id=2ae11f36-f648-4631-ab34-eb9e8389ed68, error_response={"details": [], "message": "Failed to send messages"}, headers={'server': 'legy', 'cache-control': 'no-cache, no-store, max-age=0, must-revalidate', 'content-type': 'application/json', 'date': 'Tue, 19 Nov 2024 00:56:52 GMT', 'expires': '0', 'pragma': 'no-cache', 'x-content-type-options': 'nosniff', 'x-frame-options': 'DENY', 'x-line-request-id': '2ae11f36-f648-4631-ab34-eb9e8389ed68', 'x-xss-protection': '1; mode=block', 'content-length': '37'}
+
+Error in send_line_message: LineBotApiError: status_code=400, request_id=2ae11f36-f648-4631-ab34-eb9e8389ed68, error_response={"details": [], "message": "Failed to send messages"}, headers={'server': 'legy', 'cache-control': 'no-cache, no-store, max-age=0, must-revalidate', 'content-type': 'application/json', 'date': 'Tue, 19 Nov 2024 00:56:52 GMT', 'expires': '0', 'pragma': 'no-cache', 'x-content-type-options': 'nosniff', 'x-frame-options': 'DENY', 'x-line-request-id': '2ae11f36-f648-4631-ab34-eb9e8389ed68', 'x-xss-protection': '1; mode=block', 'content-length': '37'}
+Traceback (most recent call last):
+  File "/home/temmie0232/Project/line-bot/backend/api/views.py", line 49, in send_line_message
+    line_bot_api.push_message(
+  File "/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/deprecated/classic.py", line 199, in wrapper_function
+    return wrapped_(*args_, **kwargs_)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/linebot/api.py", line 174, in push_message
+    self._post(
+  File "/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/linebot/api.py", line 2116, in _post
+    self.__check_error(response)
+  File "/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/linebot/api.py", line 2152, in __check_error
+    raise LineBotApiError(
+linebot.exceptions.LineBotApiError: LineBotApiError: status_code=400, request_id=2ae11f36-f648-4631-ab34-eb9e8389ed68, error_response={"details": [], "message": "Failed to send messages"}, headers={'server': 'legy', 'cache-control': 'no-cache, no-store, max-age=0, must-revalidate', 'content-type': 'application/json', 'date': 'Tue, 19 Nov 2024 00:56:52 GMT', 'expires': '0', 'pragma': 'no-cache', 'x-content-type-options': 'nosniff', 'x-frame-options': 'DENY', 'x-line-request-id': '2ae11f36-f648-4631-ab34-eb9e8389ed68', 'x-xss-protection': '1; mode=block', 'content-length': '37'}
+
+Internal Server Error: /api/send-line-message/
+Internal Server Error: /api/send-line-message/
+"POST /api/send-line-message/ HTTP/1.1" 500 2047
+"POST /api/send-line-message/ HTTP/1.1" 500 2047
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/linebot/models/mention.py changed, reloading.
+/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/linebot/models/mention.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/linebot/models/filter.py changed, reloading.
+/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/linebot/models/filter.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /api/send-line-message/ HTTP/1.1" 200 21
+"POST /api/send-line-message/ HTTP/1.1" 200 21
+"POST /api/send-line-message/ HTTP/1.1" 200 21
+"POST /api/send-line-message/ HTTP/1.1" 200 21
+/home/temmie0232/Project/line-bot/backend/api/models.py changed, reloading.
+/home/temmie0232/Project/line-bot/backend/api/models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/home/temmie0232/Project/line-bot/backend/api/views.py changed, reloading.
+/home/temmie0232/Project/line-bot/backend/api/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/home/temmie0232/Project/line-bot/backend/api/views.py changed, reloading.
+/home/temmie0232/Project/line-bot/backend/api/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /send_hello
+Not Found: /send_hello
+"GET /send_hello HTTP/1.1" 404 2521
+"GET /send_hello HTTP/1.1" 404 2521
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2524
+"GET /favicon.ico HTTP/1.1" 404 2524
+Not Found: /api/send-line-message/
+Not Found: /api/send-line-message/
+"POST /api/send-line-message/ HTTP/1.1" 404 4913
+"POST /api/send-line-message/ HTTP/1.1" 404 4913
+/home/temmie0232/Project/line-bot/backend/api/views.py changed, reloading.
+/home/temmie0232/Project/line-bot/backend/api/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/home/temmie0232/Project/line-bot/backend/api/urls.py changed, reloading.
+/home/temmie0232/Project/line-bot/backend/api/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Bad Request: /api/send-line-message/
+Bad Request: /api/send-line-message/
+"POST /api/send-line-message/ HTTP/1.1" 400 31
+"POST /api/send-line-message/ HTTP/1.1" 400 31
+/home/temmie0232/Project/line-bot/backend/api/views.py changed, reloading.
+/home/temmie0232/Project/line-bot/backend/api/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /api/send-line-message/
+Traceback (most recent call last):
+  File "/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/rest_framework/response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/rest_framework/renderers.py", line 100, in render
+    ret = json.dumps(
+          ^^^^^^^^^^^
+  File "/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/rest_framework/utils/encoders.py", line 52, in default
+    return obj.decode()
+           ^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x9c in position 1: invalid start byte
+Internal Server Error: /api/send-line-message/
+Traceback (most recent call last):
+  File "/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/rest_framework/response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/rest_framework/renderers.py", line 100, in render
+    ret = json.dumps(
+          ^^^^^^^^^^^
+  File "/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/rest_framework/utils/encoders.py", line 52, in default
+    return obj.decode()
+           ^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x9c in position 1: invalid start byte
+"POST /api/send-line-message/ HTTP/1.1" 500 105685
+"POST /api/send-line-message/ HTTP/1.1" 500 105685
+/home/temmie0232/Project/line-bot/backend/api/views.py changed, reloading.
+/home/temmie0232/Project/line-bot/backend/api/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /api/send-line-message/ HTTP/1.1" 200 50
+"POST /api/send-line-message/ HTTP/1.1" 200 50
+Bad Request: /api/send-line-message/
+Bad Request: /api/send-line-message/
+"POST /api/send-line-message/ HTTP/1.1" 400 28
+"POST /api/send-line-message/ HTTP/1.1" 400 28
+"POST /api/send-line-message/ HTTP/1.1" 200 50
+"POST /api/send-line-message/ HTTP/1.1" 200 50
+Bad Request: /api/send-line-message/
+Bad Request: /api/send-line-message/
+"POST /api/send-line-message/ HTTP/1.1" 400 28
+"POST /api/send-line-message/ HTTP/1.1" 400 28
+/home/temmie0232/Project/line-bot/backend/api/models.py changed, reloading.
+/home/temmie0232/Project/line-bot/backend/api/models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/home/temmie0232/Project/line-bot/backend/api/views.py changed, reloading.
+/home/temmie0232/Project/line-bot/backend/api/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /api/send-line-message/
+Not Found: /api/send-line-message/
+"POST /api/send-line-message/ HTTP/1.1" 404 2670
+"POST /api/send-line-message/ HTTP/1.1" 404 2670
+/home/temmie0232/Project/line-bot/backend/config/urls.py changed, reloading.
+/home/temmie0232/Project/line-bot/backend/config/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/home/temmie0232/Project/line-bot/backend/config/settings.py changed, reloading.
+/home/temmie0232/Project/line-bot/backend/config/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/home/temmie0232/Project/line-bot/backend/api/views.py changed, reloading.
+/home/temmie0232/Project/line-bot/backend/api/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/home/temmie0232/Project/line-bot/backend/api/models.py changed, reloading.
+/home/temmie0232/Project/line-bot/backend/api/models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/home/temmie0232/Project/line-bot/backend/api/urls.py changed, reloading.
+/home/temmie0232/Project/line-bot/backend/api/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /api/send-line-message/ HTTP/1.1" 200 21
+"POST /api/send-line-message/ HTTP/1.1" 200 21
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /
+Not Found: /
+"GET / HTTP/1.1" 404 2473
+"GET / HTTP/1.1" 404 2473
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2524
+"GET /favicon.ico HTTP/1.1" 404 2524
+"POST /api/send-line-message/ HTTP/1.1" 200 21
+"POST /api/send-line-message/ HTTP/1.1" 200 21
+/home/temmie0232/Project/line-bot/backend/api/views.py changed, reloading.
+/home/temmie0232/Project/line-bot/backend/api/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /api/send-line-message/
+Internal Server Error: /api/send-line-message/
+"POST /api/send-line-message/ HTTP/1.1" 500 2440
+"POST /api/send-line-message/ HTTP/1.1" 500 2440
+Internal Server Error: /api/send-line-message/
+Internal Server Error: /api/send-line-message/
+"POST /api/send-line-message/ HTTP/1.1" 500 2440
+"POST /api/send-line-message/ HTTP/1.1" 500 2440
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /
+Not Found: /
+"GET / HTTP/1.1" 404 2473
+"GET / HTTP/1.1" 404 2473
+"POST /api/send-line-message/ HTTP/1.1" 200 21
+"POST /api/send-line-message/ HTTP/1.1" 200 21
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /api/send-line-message/
+Internal Server Error: /api/send-line-message/
+"POST /api/send-line-message/ HTTP/1.1" 500 2440
+"POST /api/send-line-message/ HTTP/1.1" 500 2440
+/home/temmie0232/Project/line-bot/backend/api/views.py changed, reloading.
+/home/temmie0232/Project/line-bot/backend/api/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/home/temmie0232/Project/line-bot/backend/api/views.py changed, reloading.
+/home/temmie0232/Project/line-bot/backend/api/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/home/temmie0232/Project/line-bot/backend/config/settings.py changed, reloading.
+/home/temmie0232/Project/line-bot/backend/config/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/home/temmie0232/Project/line-bot/backend/config/settings.py changed, reloading.
+/home/temmie0232/Project/line-bot/backend/config/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/home/temmie0232/Project/line-bot/backend/api/views.py changed, reloading.
+/home/temmie0232/Project/line-bot/backend/api/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /api/send-line-message/ HTTP/1.1" 200 21
+"POST /api/send-line-message/ HTTP/1.1" 200 21
+Invalid HTTP_HOST header: 'saving-dear-goldfish.ngrok-free.app'. You may need to add 'saving-dear-goldfish.ngrok-free.app' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'saving-dear-goldfish.ngrok-free.app'. You may need to add 'saving-dear-goldfish.ngrok-free.app' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'saving-dear-goldfish.ngrok-free.app'. You may need to add 'saving-dear-goldfish.ngrok-free.app' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'saving-dear-goldfish.ngrok-free.app'. You may need to add 'saving-dear-goldfish.ngrok-free.app' to ALLOWED_HOSTS.
+Bad Request: /media/pdf_images/pdf_image_8383b770-2063-4a5b-b89f-2611ee90be5e_preview.jpg
+Bad Request: /media/pdf_images/pdf_image_8383b770-2063-4a5b-b89f-2611ee90be5e_preview.jpg
+"GET /media/pdf_images/pdf_image_8383b770-2063-4a5b-b89f-2611ee90be5e_preview.jpg HTTP/1.1" 400 70795
+"GET /media/pdf_images/pdf_image_8383b770-2063-4a5b-b89f-2611ee90be5e_preview.jpg HTTP/1.1" 400 70795
+Invalid HTTP_HOST header: 'saving-dear-goldfish.ngrok-free.app'. You may need to add 'saving-dear-goldfish.ngrok-free.app' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'saving-dear-goldfish.ngrok-free.app'. You may need to add 'saving-dear-goldfish.ngrok-free.app' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'saving-dear-goldfish.ngrok-free.app'. You may need to add 'saving-dear-goldfish.ngrok-free.app' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'saving-dear-goldfish.ngrok-free.app'. You may need to add 'saving-dear-goldfish.ngrok-free.app' to ALLOWED_HOSTS.
+Bad Request: /media/pdf_images/pdf_image_8383b770-2063-4a5b-b89f-2611ee90be5e.jpg
+Bad Request: /media/pdf_images/pdf_image_8383b770-2063-4a5b-b89f-2611ee90be5e.jpg
+"GET /media/pdf_images/pdf_image_8383b770-2063-4a5b-b89f-2611ee90be5e.jpg HTTP/1.1" 400 70372
+"GET /media/pdf_images/pdf_image_8383b770-2063-4a5b-b89f-2611ee90be5e.jpg HTTP/1.1" 400 70372
+Invalid HTTP_HOST header: 'saving-dear-goldfish.ngrok-free.app'. You may need to add 'saving-dear-goldfish.ngrok-free.app' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'saving-dear-goldfish.ngrok-free.app'. You may need to add 'saving-dear-goldfish.ngrok-free.app' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'saving-dear-goldfish.ngrok-free.app'. You may need to add 'saving-dear-goldfish.ngrok-free.app' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'saving-dear-goldfish.ngrok-free.app'. You may need to add 'saving-dear-goldfish.ngrok-free.app' to ALLOWED_HOSTS.
+Bad Request: /media/pdf_images/pdf_image_8383b770-2063-4a5b-b89f-2611ee90be5e.jpg
+Bad Request: /media/pdf_images/pdf_image_8383b770-2063-4a5b-b89f-2611ee90be5e.jpg
+"GET /media/pdf_images/pdf_image_8383b770-2063-4a5b-b89f-2611ee90be5e.jpg HTTP/1.1" 400 70537
+"GET /media/pdf_images/pdf_image_8383b770-2063-4a5b-b89f-2611ee90be5e.jpg HTTP/1.1" 400 70537
+Invalid HTTP_HOST header: 'saving-dear-goldfish.ngrok-free.app'. You may need to add 'saving-dear-goldfish.ngrok-free.app' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'saving-dear-goldfish.ngrok-free.app'. You may need to add 'saving-dear-goldfish.ngrok-free.app' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'saving-dear-goldfish.ngrok-free.app'. You may need to add 'saving-dear-goldfish.ngrok-free.app' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/temmie0232/Project/line-bot/backend/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'saving-dear-goldfish.ngrok-free.app'. You may need to add 'saving-dear-goldfish.ngrok-free.app' to ALLOWED_HOSTS.
+Bad Request: /media/pdf_images/pdf_image_8383b770-2063-4a5b-b89f-2611ee90be5e_preview.jpg
+Bad Request: /media/pdf_images/pdf_image_8383b770-2063-4a5b-b89f-2611ee90be5e_preview.jpg
+"GET /media/pdf_images/pdf_image_8383b770-2063-4a5b-b89f-2611ee90be5e_preview.jpg HTTP/1.1" 400 70625
+"GET /media/pdf_images/pdf_image_8383b770-2063-4a5b-b89f-2611ee90be5e_preview.jpg HTTP/1.1" 400 70625
+/home/temmie0232/Project/line-bot/backend/api/views.py changed, reloading.
+/home/temmie0232/Project/line-bot/backend/api/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/home/temmie0232/Project/line-bot/backend/config/settings.py changed, reloading.
+/home/temmie0232/Project/line-bot/backend/config/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /api/send-line-message/ HTTP/1.1" 200 21
+"POST /api/send-line-message/ HTTP/1.1" 200 21
